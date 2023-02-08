@@ -1,0 +1,19 @@
+<html>
+
+<head>
+    <script>
+        class Mobile {
+            constructor(number) {
+                this.number = number;
+            }
+            sendMessage(message, recipient) {
+                console.log(`Sending massage "${message}" from ${this.number} to ${recipient.number} `);
+            }
+        }
+        const phone1 = new Mobile("Iphone");
+        const phone2 = new Mobile("Samsung");
+        phone1.sendMessage("Hello!", phone2)
+    </script>
+</head>
+
+</html>

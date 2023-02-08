@@ -1,0 +1,18 @@
+<html>
+
+<head>
+    <script>
+        let first = 0;
+        let second = 1;
+        let sum = 0;
+        while (second < 200) {
+            let next = first + second;
+            first = second;
+            second = next;
+            sum += first;
+        }
+        console.log("Sum of all fibonacci numbers less than 200:", sum);
+    </script>
+</head>
+
+</html>
